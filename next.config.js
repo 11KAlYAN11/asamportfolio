@@ -5,6 +5,7 @@ module.exports = {
     includePaths: [path.join(__dirname, 'styles')],
   },
   output: 'export',
+  basePath: '/asamportfolio',
   images: {
     unoptimized: true,
     remotePatterns: [
