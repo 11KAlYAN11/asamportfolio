@@ -1,0 +1,42 @@
+@use "tailwindcss";
+
+:root {
+  --bg-primary: #ffffff;
+  --text-primary: #0d1224;
+  --card-bg: #f3f4f6;
+  --border-color: #e5e7eb;
+}
+
+.dark {
+  --bg-primary: #0d1224;
+  --text-primary: #ffffff;
+  --card-bg: #101123;
+  --border-color: #2a2e5a;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#sticky-card-1 {
+  --index: 1;
+}
+
+#sticky-card-2 {
+  --index: 2;
+}
+
+#sticky-card-3 {
+  --index: 3;
+}
+
+#sticky-card-4 {
+  --index: 4;
+}
+
+.sticky-card {
+  // padding-top: calc(var(--index) * 2.5rem);
+  top: calc(var(--index) * 4rem);
+}
